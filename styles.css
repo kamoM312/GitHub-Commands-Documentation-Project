@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: auto;
+
+}
+
+div.card {
+    width: 240px;
+}
