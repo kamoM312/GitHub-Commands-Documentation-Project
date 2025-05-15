@@ -29,8 +29,9 @@ body {
 
 div.card {
     width: 240px; 
-    background-color: white;
+    /* background-color: white; */
     /* border: solid black 5px; */
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 
     display: flex;
     flex-direction: column;
