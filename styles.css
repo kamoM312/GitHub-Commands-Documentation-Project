@@ -21,7 +21,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin: auto;
+    margin: 20px auto;
     max-width: 1200px;
 }
 
@@ -36,5 +36,26 @@ div.card {
 }
 
 .card h2 {
+    text-align: center;
+}
+
+#explanations {
+    margin: 0 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.flex {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+p {
     text-align: center;
 }
