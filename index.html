@@ -56,7 +56,7 @@
 
         <div class="card">
             <div>
-                <h2>git commit -m "[descriptive message]"</h2>
+                <h2>git commit</h2>
             </div>
 
             <div>
@@ -126,6 +126,7 @@
     </section>
 
     <section id="explanations">
+
         <div id="init">
             <h2>git init</h2>
 
@@ -161,7 +162,7 @@
             <p>A combination of git fetch + git merge, updates some parts of your local repository with changes from the remote repository.</p>
         </div>
 
-        <div>
+        <div id="add">
             <h2>git add</h2>
 
             <h3>Description</h3>
@@ -178,36 +179,41 @@
                  You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.</p>
         </div>
 
-        <div>
+        <div id="commit">
             <h2>git commit</h2>
 
             <h3>Description</h3>
-            <p>Adds new or changed files in your working directory to the Git staging area.</p>
+            <p>Creates a commit, which is like a snapshot of your repository. 
+                These commits are snapshots of your entire repository at specific times. </p>
 
             <h3>syntax</h3>
-            <p>{  }</p>
+            <p>{ git commit -m "[descriptive message]" }</p>
 
             <h3>usage example</h3>
-            <p>After making changes to a file. </p>
+            <p>After adding a file to the staging area, git commit can be run to specify the changes that were made to the file.</p>
 
             <h3>detailed explanation</h3>
-            <p></p>
+            <p>Creates a commit, which is like a snapshot of your repository.
+                These commits are snapshots of your entire repository at specific times. 
+                You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is.
+                 Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.</p>
         </div>
 
-        <div>
+        <div id="push">
             <h2>git push</h2>
 
             <h3>Description</h3>
-            <p></p>
+            <p>Uploads all local branch commits to the corresponding remote branch.</p>
 
             <h3>syntax</h3>
-            <p></p>
+            <p>{ git push }</p>
 
             <h3>usage example</h3>
-            <p></p>
+            <p>After making your local commits, running git push will allow you to publish your changes to the remote repository.</p>
 
             <h3>detailed explanation</h3>
-            <p></p>
+            <p>After you make and commit changes locally, you can share them with the remote repository using git push. 
+                Pushing changes to the remote makes your commits accessible to others who you may be collaborating with. </p>
         </div>
 
         <div>
@@ -257,6 +263,7 @@
             <h3>detailed explanation</h3>
             <p></p>
         </div>
+
     </section>
     
 </body>
